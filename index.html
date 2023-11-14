@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Infoblog - Impactos Ambientais dos Meios de Transportes</title>
+  <style>
+    /* Seus estilos CSS aqui */
+    body, h1, h2, p, ul, li {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 10px;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 15px 0;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+      color: #333;
+      font-weight: 700;
+      font-size: 1.8em;
+    }
+
+    nav ul {
+      list-style: none;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #4a9059;
+      font-size: 1em;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #36633f;
+    }
+
+    main {
+      padding: 10px;
+    }
+
+    section {
+      margin-bottom: 20px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    section h2 {
+      color: #333;
+      margin-bottom: 15px;
+      font-size: 1.5em;
+    }
+
+    section p {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #fff;
+      color: #777;
+      font-size: 0.8em;
+    }
+
+    /* Estilo para botões */
+    button {
+      padding: 8px 15px;
+      background-color: #4a9059;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #36633f;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Calculadora de Impactos Ambientais</h1>
+    <nav>
+      <ul>
+        <li><a href="#carro">Carro</a></li>
+        <li><a href="#onibus">Ônibus</a></li>
+        <li><a href="#bicicleta">Bicicleta</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Objetivos de Desenvolvimento Sustentável</h2>
+      <p>Os Objetivos de Desenvolvimento Sustentável são um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade. Estes são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos atingir a Agenda 2030 no Brasil.</p>
+<h3> ODS 13 (Ação Contra a Mudança Global do Clima)</h3>
+<p>Esta meta busca internalizar a preocupação com as mudanças climáticas e inseri-la na elaboração das políticas públicas em âmbito nacional. A principal política nacional relacionada a esta meta é a Política Nacional sobre Mudança do Clima - lei nº 12.187/2009.</p>
+    </section>
+
+    <section>
+      <h2>Emissão de CO2 e seus malefícios</h2>
+      <p>Emissão de carbono é uma expressão que faz referência ao lançamento de gases de efeito estufa na atmosfera, principalmente o dióxido de carbono (CO2) — ou gás carbônico. No entanto, há outras substâncias gasosas tão ou mais prejudiciais, como o óxido nitroso (N2O), o hexafluoreto de enxofre (SF6) e o metano (CH4).</p>
+<p>A alta concentração de dióxido de carbono leva a uma série de alterações climáticas, como poluição do ar, formação de chuva ácida e desequilíbrio do efeito estufa. Consequentemente há elevação da temperatura da Terra, que traz consigo os efeitos das mudanças climáticas.  </p>
+    </section>
+
+    <section id="carro">
+      <h2>Impacto Ambiental do Carro</h2>
+     <p>Os carros são uma das principais fontes de poluição do ar, liberando gases como dióxido de carbono (CO2), óxidos de nitrogênio (NOx) e hidrocarbonetos. Além disso, a produção de carros consome muitos recursos naturais e gera resíduos tóxicos.</p>
+  
+  <div>
+    <label for="kmCarro">Quilometragem:</label>
+    <input type="number" id="kmCarro" placeholder="Insira a quilometragem">
+    <button onclick="calcularEmissao('carro')">Calcular Emissão</button>
+    <p id="emissaoCarro"></p>
+  </div>
+    </section>
+
+    <section id="onibus">
+      <h2>Impacto Ambiental do Ônibus</h2>
+     <p>Os ônibus são uma opção de transporte em massa, porém, muitos ainda são movidos por combustíveis fósseis, o que contribui para a poluição do ar. A lotação de ônibus também pode causar congestionamentos e aumentar as emissões de CO2.</p>
+  
+  <div>
+    <label for="kmOnibus">Quilometragem:</label>
+    <input type="number" id="kmOnibus" placeholder="Insira a quilometragem">
+    <button onclick="calcularEmissao('onibus')">Calcular Emissão</button>
+    <p id="emissaoOnibus"></p>
+  </div>
+    </section>
+
+    <section id="bicicleta">
+      <h2>Impacto Ambiental da Bicicleta</h2>
+      <p>A bicicleta é um meio de transporte sustentável, pois não emite poluentes. Seu impacto ambiental é mínimo em comparação com carros e ônibus. Promover o uso da bicicleta pode reduzir significativamente a poluição do ar e as emissões de carbono.</p>
+ 
+  <div>
+    <label for="kmBicicleta">Quilometragem:</label>
+    <input type="number" id="kmBicicleta" placeholder="Insira a quilometragem">
+    <button onclick="calcularEmissao('bicicleta')">Calcular Emissão</button>
+    <p id="emissaoBicicleta"></p>
+  </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Infoblog sobre Impactos Ambientais dos Meios de Transporte</p>
+    <p>Site produzido por Fraude</p>
+    <p>República do Pelé</p>
+  </footer>
+
+  <script type="text/javascript">
+
+function calcularEmissao(meioTransporte) {
+  let fatorEmissao = 0;
+  let quilometragem = 0;
+
+  switch (meioTransporte) {
+    case 'carro':
+      fatorEmissao = 0.2; // Exemplo de fator de emissão para carros
+      quilometragem = parseFloat(document.getElementById('kmCarro').value);
+      break;
+    case 'onibus':
+      fatorEmissao = 0.15; // Exemplo de fator de emissão para ônibus
+      quilometragem = parseFloat(document.getElementById('kmOnibus').value);
+      break;
+    case 'bicicleta':
+      fatorEmissao = 0; // A bicicleta não emite CO2
+      quilometragem = parseFloat(document.getElementById('kmBicicleta').value);
+      break;
+    default:
+      break;
+  }
+
+  if (!isNaN(quilometragem)) {
+    const emissao = fatorEmissao * quilometragem;
+    const mensagem = `Emissão estimada: ${emissao.toFixed(2)} kg de CO2 equivalente para ${quilometragem} km.`;
+    document.getElementById(`emissao${meioTransporte.charAt(0).toUpperCase() + meioTransporte.slice(1)}`).textContent = mensagem;
+  } else {
+    alert('Por favor, insira uma quilometragem válida.');
+  }
+}
+
+
+  </script>
+</body>
+</html>
